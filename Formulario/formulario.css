@@ -37,6 +37,7 @@ form {
 }
 
 h2 {
+    font-size: 30px;
     color: var(--accent);
     margin-bottom: 15px;
     text-align: center;
