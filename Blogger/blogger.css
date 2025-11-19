@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+    scroll-behavior: smooth; /* Animación al navegar */
+}
+
+/* Contenedor */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease forwards;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #1e88e5;
+}
+
+/* Tarjetas de artículos */
+.post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.25s, box-shadow 0.25s;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.post:nth-child(1) { animation-delay: .2s; }
+.post:nth-child(2) { animation-delay: .4s; }
+
+/* Artículos completos */
+.article {
+    background: #fff;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.article h2 {
+    color: #1e88e5;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1e88e5;
+    font-weight: bold;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+}
