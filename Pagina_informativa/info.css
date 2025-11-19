@@ -21,7 +21,6 @@ body {
     padding: 20px;
 }
 
-/* HEADER */
 header {
     text-align: center;
     margin-top: 40px;
@@ -40,7 +39,6 @@ header p {
     margin-top: 10px;
 }
 
-/* SECCIONES */
 .section {
     max-width: 1000px;
     margin: 50px auto;
@@ -58,14 +56,12 @@ header p {
     font-size: 1.8rem;
 }
 
-/* TEXTO */
 .section p {
     line-height: 1.7;
     opacity: 0.9;
     margin-bottom: 20px;
 }
 
-/* PRODUCTO DESTACADO */
 .featured {
     background: linear-gradient(145deg, #121212, #1a1a1a);
     padding: 30px;
@@ -91,7 +87,6 @@ header p {
     font-weight: bold;
 }
 
-/* TARJETAS DE PRODUCTOS */
 .cards {
     display: grid;
     gap: 20px;
@@ -127,7 +122,6 @@ header p {
     font-weight: bold;
 }
 
-/* FOOTER */
 footer {
     max-width: 1000px;
     margin: 60px auto 20px;
@@ -138,7 +132,6 @@ footer {
     border-top: 1px solid #333;
 }
 
-/* BOTÓN VOLVER ARRIBA */
 .back-to-top {
     position: fixed;
     bottom: 25px;
@@ -158,7 +151,6 @@ footer {
     opacity: 0.85;
 }
 
-/* ANIMACIONES */
 @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
