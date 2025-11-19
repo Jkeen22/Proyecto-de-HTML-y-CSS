@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap');
+
+:root {
+    --bg: #0d0d0d;
+    --card: #1a1a1a;
+    --text: #e6e6e6;
+    --accent: #4da3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text);
+    padding: 20px;
+}
+
+/* FORM CARD */
+form {
+    background: var(--card);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    animation: slideUp 0.8s ease;
+}
+
+h2 {
+    color: var(--accent);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* LABELS */
+label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* INPUTS */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--accent);
+    transform: scale(1.02);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-3px);
+}
+
+/* ANIMATION */
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
